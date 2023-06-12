@@ -20,9 +20,10 @@ body {
 
  /* NAvBAR starts */
 #header {
-  background-image: url(images/cyberpunk.gif);
+/*   background-image: url(images/cyberpunk.gif); */
   height: 650px;
-  background-attachment: fixed;
+/*   background-attachment: fixed; */
+  background-color:#220a64;
 }
 .logo {
   font-size: 2rem;
