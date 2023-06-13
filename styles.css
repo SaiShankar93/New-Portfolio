@@ -13,10 +13,6 @@ html::-webkit-scrollbar-track {
 html::-webkit-scrollbar-thumb {
   background: #420177;
 }
-body {
-  /* cursor: url("fa-brands fa-github"),auto; */
-}
-
 
  /* NAvBAR starts */
 #header {
