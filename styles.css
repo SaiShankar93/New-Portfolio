@@ -13,13 +13,17 @@ html::-webkit-scrollbar-track {
 html::-webkit-scrollbar-thumb {
   background: #420177;
 }
+body {
+  /* cursor: url("fa-brands fa-github"),auto; */
+  overflow-x: hidden;
+}
+
 
  /* NAvBAR starts */
 #header {
   background-image: url(images/cyberpunk.gif);
   height: 650px;
-/*   background-attachment: fixed; */
-  background-color:#220a64;
+  background-attachment:fixed;
 }
 .logo {
   font-size: 2rem;
@@ -122,6 +126,7 @@ nav {
 
 /* about section starts */
 
+
 #about {
   background-color: #1d0b4d;
   width: 100%;
@@ -154,6 +159,7 @@ nav {
   height: 70%;
   width: 70%;
 }
+
 
 /* about section ends */
 
@@ -491,11 +497,13 @@ nav {
   padding: 25px 30px;
   margin: 30px 0;
   color: #03e9f4;
-  text-decoration: none;
+  text-decoration:none ;
   text-transform: uppercase;
   transition: 0.5s;
   letter-spacing: 4px;
   overflow: hidden;
+  border:2px solid #00eeff;
+  border-radius: 10px;
 }
 .contact-btn:hover {
   background: #03e9f4;
@@ -504,7 +512,8 @@ nav {
     0 0 200px #03e9f4;
   -webkit-box-reflect: below 1px linear-gradient(transparent, #0005);
 }
-.contact-btn:nth-child(1) {
+
+/* .contact-btn:nth-child(1) {
   filter: hue-rotate(270deg);
 }
 .contact-btn:nth-child(2) {
@@ -585,19 +594,28 @@ nav {
   100% {
     bottom: 100%;
   }
-}
+} */
 
 /* contact me section ends */
 
 
 /* media queries for responsiveness */
 @media screen and (max-width: 767px) {
+  #header {
+    background-attachment:unset;
+  }
   .top {
     backdrop-filter: unset;
 
   }
-  .left {
-    background-color: rgb(29, 11, 77);  
+  .left{
+    background:linear-gradient(
+      to bottom right,
+        rgb(248, 28, 175),rgba(9, 0, 128,.8)
+    );
+    backdrop-filter: blur(5px);
+    width: 100px;
+    border-radius: 15px ;
   }
   .left li {
     margin: 0px;
@@ -633,6 +651,9 @@ nav {
   }
 }
 @media screen and (min-width: 20px) and (max-width:480px){
+  #header {
+    background-attachment:unset;
+  }
   .home-text {
     width: 85%;
     height: 200px;
@@ -691,6 +712,39 @@ nav {
   }
 }
 
+/* animations */
+
+.animated-content-left {
+  opacity: 0;
+  transform: translateX(-100%);
+  transition: opacity 2s, transform 2s;
+  margin:0;
+  padding:0;
+}
+.animated-content-left.animate {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+.animated-content-right {
+  opacity: 0;
+  transform: translateX(100%);
+  transition: opacity 2s, transform 2s;
+}
+.animated-content-right.animate {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+.animated-content-top {
+  opacity: 0;
+  transform: translateY(-100%);
+  transition: opacity 2s, transform 2s;
+}
+.animated-content-top.animate {
+  opacity: 1;
+  transform: translateX(0);
+}
 
 
 /* css ends */

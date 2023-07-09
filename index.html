@@ -23,62 +23,54 @@
 
 <body>
     <div id="header">
-        <nav class="navbar navbar-expand-md navbar-dark bg-dark  py-0 ">
+        <nav class="navbar navbar-expand-md navbar-dark bg-dark">
             <div class="container-fluid top">
                 <a class="navbar-brand" href="#">
                     <h3 class="logo">Sai Shankar</h3>
                 </a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
-                    data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-expanded="false"
-                    aria-label="Toggle navigation">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
-                <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasNavbar"
-                    aria-labelledby="offcanvasNavbarLabel">
-                    <div class="offcanvas-header left">
-                        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas"
-                            aria-label="Close"></button>
-                    </div>
-                    <div class="offcanvas-body left">
-                        <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
-                            <li class="nav-item">
-                                <a class="nav-link active" aria-current="page" href="#header">
-                                    <p>Home</p>
-                                </a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#about">
-                                    <p>About</p>
-                                </a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#skills">
-                                    <p>Skills</p>
-                                </a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#edu">
-                                    <p>Education</p>
-                                </a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#projects">
-                                    <p>Projects</p>
-                                </a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#contact">
-                                    <p>Contact Me</p>
-                                </a>
-                            </li>
-                        </ul>
-                    </div>
+                <div class="collapse navbar-collapse left align-items-end" id="navbarSupportedContent">
+                    <ul class="align-items-center navbar-nav me-auto mb-2 mb-md-0  ">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#header">
+                                <p>Home</p>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#about">
+                                <p>About</p>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#skills">
+                                <p>Skills</p>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#edu">
+                                <p>Education</p>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#projects">
+                                <p>Projects</p>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#contact">
+                                <p>Contact Me</p>
+                            </a>
+                        </li>
+                    </ul>
                 </div>
             </div>
         </nav>
-
         <section id="home">
-            <div class="home-text">
+            <div class="home-text animated-content-top">
                 Hello,
                 I'm
                 <span class="name"> <i>Sai Shankar Punna.</i></span> <br>
@@ -103,9 +95,9 @@
     <section id="about" class="row">
         <h1><i class="fa-solid fa-user fas"></i>About Me</h1>
         <div class="abtfirst col-md-6">
-            <img class="myPic" src="images/SAI.png" alt="SAI's pic">
+            <img class="myPic animated-content-left" src="images/SAI.png" alt="SAI's pic">
         </div>
-        <div class="abtsecond col-md-6">
+        <div class="abtsecond animated-content-right col-md-6">
             Hey there, I'm <span class="abt"> Sai Shankar</span> . I'm pursuing my first year of B.tech in Computer
             Science. I have a deep passion towards technology . I'm looking forward to enhance my skills. I'm always
             curious to learn new things in tech. I'm skilled at<span class="abt"> C++, C, HTML, CSS, Javascript,
@@ -139,6 +131,10 @@
                     Bootstrap
                 </div>
                 <div class="col-md-4 col-4 skill-div">
+                    <img src="images/nodejs.png" class="skill-img" alt=""> <br>
+                    Node.js
+                </div>
+                <div class="col-md-4 col-4 skill-div">
                     <img src="images/clang.png" class="skill-img" alt=""> <br>
                     C
                 </div>
@@ -154,6 +150,7 @@
                     <img src="images/git.png" class="skill-img" alt=""> <br>
                     Git VCS
                 </div>
+
             </div>
         </div>
     </section>
@@ -164,24 +161,24 @@
             <h1><i class="fa-solid fa-graduation-cap fas"></i>Education</h1>
         </div>
         <ul>
-            <li>
-                <div>
+            <li >
+                <div class="animated-content-right">
                     <time>2022-2026</time>
                     <strong>JB institute of engineering and technology.</strong>
                     <hr>
                     B.tech in Computer Science and Engineering.
                 </div>
             </li>
-            <li>
-                <div>
+            <li >
+                <div class="animated-content-left">
                     <time>2020-2022</time>
                     <strong>MJP Residential Junior College.</strong>
                     <hr>
                     Class 12th - MPC.
                 </div>
             </li>
-            <li>
-                <div>
+            <li >
+                <div class="animated-content-right">
                     <time>2019-2020</time>
                     <strong> Brilliant Grammar High School.</strong>
                     <hr>
@@ -247,18 +244,16 @@
             social platforms
         </p>
         <a href="mailto:saishankarpunna@gmail.com" class="contact-btn" target="_blank">
-            <span></span>
-            <span></span>
-            <span></span>
-            <span></span>
+
             Contact Me
         </a>
+        <!-- <button href="mailto:saishankarpunna@gmail.com" class="contact-btn" target="_blank" >Contact Me</button> -->
         <hr>
         <div class="icons">
             <a href="https://github.com/SaiShankar93" alt="Github Link" target="_blank"><i
                     class="icon fa-brands fa-github fa-2x github" target="_blank"></i></a>
             <a href="https://www.linkedin.com/in/sai-shankar-ab013b248/" alt="linkedin-link" target="_blank"><i
-                    class="icon fa-brands fa-linkedin fa-2x linkedin" ></i></a>
+                    class="icon fa-brands fa-linkedin fa-2x linkedin"></i></a>
             <a href="https://twitter.com/SaiShankar93" class="twitter-link" target="_blank"><i
                     class="icon fa-brands fa-twitter fa-2x twitter"></i></a>
             <a href="https://www.instagram.com/_sai_shankar_punna_/" alt="insta-link" target="_blank"><i
@@ -279,6 +274,8 @@
             callback: function () { alert('end'); }
         });
     </script>
+    <script src="script.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
 </body>
 
 </html>
