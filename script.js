@@ -1,3 +1,4 @@
+//function for auto collapsing the nabar
 const navLinks = document.querySelectorAll('.nav-item')
 const menuToggle = document.getElementById('navbarSupportedContent')
 const bsCollapse = new bootstrap.Collapse(menuToggle, {toggle:false})
