@@ -6,7 +6,7 @@ navLinks.forEach((l) => {
     l.addEventListener('click', () => { bsCollapse.toggle() })
 })
 
-
+/*
 window.addEventListener('load', function() {
     var animatedElements = document.getElementsByClassName('animated-content-top');
     for (var i = 0; i < animatedElements.length; i++) {
@@ -27,3 +27,4 @@ window.addEventListener('load', function() {
       animatedElements[i].classList.add('animate');
     }
   });
+    */
