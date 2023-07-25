@@ -713,7 +713,7 @@ nav {
 }
 
 /* animations */
-
+/*
 .animated-content-left {
   opacity: 0;
   transform: translateX(-100%);
@@ -745,6 +745,6 @@ nav {
   opacity: 1;
   transform: translateX(0);
 }
-
+*/
 
 /* css ends */
